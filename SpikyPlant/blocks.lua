@@ -14,53 +14,106 @@
   
 -- Polyp blocks (armor only) – each one is replaced with a pair of entries:
   
--- Block 13010
-{13010, features=PALETTE, growRate=16.25, fillColor=0x677606, fillColor1=0x424512, lineColor=0x879606, group=13, shape=GEM_1, name="Polyp", 
-    durability=3, points=1, sort=-10000},
-{113010, features=PALETTE, growRate=16.25, fillColor=0x889828, fillColor1=0x636724, lineColor=0xaab818, group=13, shape=GEM_1, name="Lighter Polyp", 
-    durability=1, points=0, sort=-10000},
-  
--- Block 13011
-{13011, features=PALETTE, growRate=16.25, fillColor=0x677606, fillColor1=0x424512, lineColor=0x879606, group=13, shape=GEM_2, name="Polyp",
-    durability=3, points=1, sort=-10000},
-{113011, features=PALETTE, growRate=16.25, fillColor=0x889828, fillColor1=0x636724, lineColor=0xaab818, group=13, shape=GEM_2, name="Lighter Polyp",
-    durability=1, points=0, sort=-10000},
-  
--- Block 13012
-{13012, features=PALETTE, growRate=16.25, fillColor=0x677606, fillColor1=0x424512, lineColor=0x879606, group=13, shape=GEM_3, name="Polyp",
-    durability=3, points=1, sort=-10000},
-{113012, features=PALETTE, growRate=16.25, fillColor=0x889828, fillColor1=0x636724, lineColor=0xaab818, group=13, shape=GEM_3, name="Lighter Polyp",
-    durability=1, points=0, sort=-10000},
-  
--- Block 13013
-{13013, features=PALETTE, growRate=16.25, fillColor=0x677606, fillColor1=0x424512, lineColor=0x879606, group=13, shape=GEM_4, name="Polyp",
-    durability=3, points=1, sort=-10000},
-{113013, features=PALETTE, growRate=16.25, fillColor=0x889828, fillColor1=0x636724, lineColor=0xaab818, group=13, shape=GEM_4, name="Lighter Polyp",
-    durability=1, points=0, sort=-10000},
-  
--- Block 13014
-{13014, features=PALETTE, growRate=16.25, fillColor=0x677606, fillColor1=0x424512, lineColor=0x879606, group=13, shape=HEPTAGON, name="Polyp",
-    durability=3, points=1, sort=-10000},
-{113014, features=PALETTE, growRate=16.25, fillColor=0x889828, fillColor1=0x636724, lineColor=0xaab818, group=13, shape=HEPTAGON, name="Lighter Polyp",
-    durability=1, points=0, sort=-10000},
-  
--- Block 13015
-{13015, features=PALETTE, growRate=16.25, fillColor=0x677606, fillColor1=0x424512, lineColor=0x879606, group=13, shape=OCTAGON, name="Polyp",
-    durability=3, points=1, sort=-10000},
-{113015, features=PALETTE, growRate=16.25, fillColor=0x889828, fillColor1=0x636724, lineColor=0xaab818, group=13, shape=OCTAGON, name="Lighter Polyp",
-    durability=1, points=0, sort=-10000},
-  
--- Block 13016 (scale=2)
-{13016, features=PALETTE, growRate=16.25, fillColor=0x677606, fillColor1=0x424512, lineColor=0x879606, group=13, shape=RECT, scale=2, name="Polyp",
-    durability=3, points=1, sort=-10000},
-{113016, features=PALETTE, growRate=16.25, fillColor=0x889828, fillColor1=0x636724, lineColor=0xaab818, group=13, shape=RECT, scale=2, name="Lighter Polyp",
-    durability=1, points=0, sort=-10000},
-  
--- Block 13017
-{13017, features=PALETTE, growRate=16.25, fillColor=0x677606, fillColor1=0x424512, lineColor=0x879606, group=13, shape=ISOTRI_25, name="Polyp",
-    durability=3, points=1, sort=-10000},
-{113017, features=PALETTE, growRate=16.25, fillColor=0x889828, fillColor1=0x636724, lineColor=0xaab818, group=13, shape=ISOTRI_25, name="Lighter Polyp",
-    durability=1, points=0, sort=-10000},
+	{ -- Polyp
+		13010,
+		features=PALETTE,
+		group=13,
+		name="Polyp",
+		blurb="",
+		shape=GEM_1, scale=1,
+		fillColor=0x677606, fillColor1=0x424512, lineColor=0x879606,
+		points=1, durability=3, density=0.1, growRate=12,
+		capacity=0.1, sort=-10000,
+	},
+	
+			-- Polyp 
+	{13011, extends=13010,  scale=1,	shape=GEM_2,}
+	{13012, extends=13010,  scale=1,	shape=GEM_3,}
+	{13013, extends=13010,  scale=1,	shape=GEM_4,}
+	{13014, extends=13010,  scale=1,	shape=HEPTAGON,}
+	{13015, extends=13010,  scale=1,	shape=OCTAGON,}
+	{13016, extends=13010,  scale=1,	shape=RECT,}
+	{13017, extends=13010,  scale=1,	shape=ISOTRI_25,}
+			-- Scale 2
+	{13046, extends=13010,  scale=2,	shape=GEM_1,}
+	{13047, extends=13010,  scale=2,	shape=GEM_2,}
+	{13048, extends=13010,  scale=2,	shape=GEM_3,}
+	{13049, extends=13010,  scale=2,	shape=GEM_4,}
+	{13050, extends=13010,  scale=2,	shape=HEPTAGON,}
+	{13051, extends=13010,  scale=2,	shape=OCTAGON,}
+	{13052, extends=13010,  scale=2,	shape=RECT,}
+	{13053, extends=13010,  scale=2,	shape=ISOTRI_25,}
+			-- Scale 3
+	{13082, extends=13010,  scale=3,	shape=GEM_1,}
+	{13083, extends=13010,  scale=3,	shape=GEM_2,}
+	{13084, extends=13010,  scale=3,	shape=GEM_3,}
+	{13085, extends=13010,  scale=3,	shape=GEM_4,}
+	{13086, extends=13010,  scale=3,	shape=HEPTAGON,}
+	{13087, extends=13010,  scale=3,	shape=OCTAGON,}
+	{13088, extends=13010,  scale=3,	shape=RECT,}
+	{13089, extends=13010,  scale=3,	shape=ISOTRI_25,}
+			-- Extras
+	{13094, extends=13010,  scale=2,	shape=SQUARE,}
+	{13095, extends=13010,  scale=1,	shape=SQUARE,}
+	{13096, extends=13010,  scale=4,	shape=RECT_QUARTER,}
+	{13097, extends=13010,  scale=6,	shape=RECT_QUARTER,}
+	{3013137, extends=13010,  scale=8,	shape=RECT_QUARTER,}
+	{3013142, extends=13010,  scale=5,	shape=RECT_QUARTER,}
+	{3013143, extends=13010,  scale=7,	shape=RECT_QUARTER,}
+	{3013138, extends=13010,  scale=4,	shape=HEPTAGON,}
+	{13098, extends=13010,  scale=3,	shape=HEPTAGON,}
+	{13099, extends=13010,  scale=1,	shape=ADAPTER,}
+	
+	{ -- Light Polyp
+		113010,
+		features=PALETTE,
+		group=13,
+		name="Light Polyp",
+		blurb="",
+		shape=GEM_1, scale=1,
+		fillColor=0x889828, fillColor1=0x636724, lineColor=0xaab818,
+		points=-1, durability=1, density=0.08, growRate=16,
+		capacity=0.1, sort=-10000,
+	},
+	
+			-- Light Polyp 
+	{113011, extends=113010,  scale=1,	shape=GEM_2,}
+	{113012, extends=113010,  scale=1,	shape=GEM_3,}
+	{113013, extends=113010,  scale=1,	shape=GEM_4,}
+	{113014, extends=113010,  scale=1,	shape=HEPTAGON,}
+	{113015, extends=113010,  scale=1,	shape=OCTAGON,}
+	{113016, extends=113010,  scale=1,	shape=RECT,}
+	{113017, extends=113010,  scale=1,	shape=ISOTRI_25,}
+			-- Scale 2
+	{113046, extends=113010,  scale=2,	shape=GEM_1,}
+	{113047, extends=113010,  scale=2,	shape=GEM_2,}
+	{113048, extends=113010,  scale=2,	shape=GEM_3,}
+	{113049, extends=113010,  scale=2,	shape=GEM_4,}
+	{113050, extends=113010,  scale=2,	shape=HEPTAGON,}
+	{113051, extends=113010,  scale=2,	shape=OCTAGON,}
+	{113052, extends=113010,  scale=2,	shape=RECT,}
+	{113053, extends=113010,  scale=2,	shape=ISOTRI_25,}
+			-- Scale 3
+	{113082, extends=113010,  scale=3,	shape=GEM_1,}
+	{113083, extends=113010,  scale=3,	shape=GEM_2,}
+	{113084, extends=113010,  scale=3,	shape=GEM_3,}
+	{113085, extends=113010,  scale=3,	shape=GEM_4,}
+	{113086, extends=113010,  scale=3,	shape=HEPTAGON,}
+	{113087, extends=113010,  scale=3,	shape=OCTAGON,}
+	{113088, extends=113010,  scale=3,	shape=RECT,}
+	{113089, extends=113010,  scale=3,	shape=ISOTRI_25,}
+			-- Extras
+	{113094, extends=113010,  scale=2,	shape=SQUARE,}
+	{113095, extends=113010,  scale=1,	shape=SQUARE,}
+	{113096, extends=113010,  scale=4,	shape=RECT_QUARTER,}
+	{113097, extends=113010,  scale=6,	shape=RECT_QUARTER,}
+	{3113137, extends=113010,  scale=8,	shape=RECT_QUARTER,}
+	{3113139, extends=113010,  scale=5,	shape=RECT_QUARTER,}
+	{3113140, extends=113010,  scale=7,	shape=RECT_QUARTER,}
+	{3113138, extends=113010,  scale=4,	shape=HEPTAGON,}
+	{113098, extends=113010,  scale=3,	shape=HEPTAGON,}
+	{113099, extends=113010,  scale=1,	shape=ADAPTER,}
+	
   
 -- Block 13018 (has special features – not changed)
 {13018, features=PALETTE|THRUSTER, capacity=0.1, fillColor=0x677646, fillColor1=0x507646,
@@ -68,53 +121,6 @@
     shape=THRUSTER, name="Polyp", points=3, durability=0.5, density=0.15, thrusterForce=40000,
     sort=10004},
   
--- Block 13046
-{13046, features=PALETTE, growRate=16.25, fillColor=0x677606, fillColor1=0x424512, lineColor=0x879606, group=13, shape=GEM_1, scale=2, name="Polyp",
-    durability=3, points=2, sort=-10000},
-{113046, features=PALETTE, growRate=16.25, fillColor=0x889828, fillColor1=0x636724, lineColor=0xaab818, group=13, shape=GEM_1, scale=2, name="Lighter Polyp",
-    durability=1, points=1, sort=-10000},
-  
--- Block 13047
-{13047, features=PALETTE, growRate=16.25, fillColor=0x677606, fillColor1=0x424512, lineColor=0x879606, group=13, shape=GEM_2, scale=2, name="Polyp",
-    durability=3, points=2, sort=-10000},
-{113047, features=PALETTE, growRate=16.25, fillColor=0x889828, fillColor1=0x636724, lineColor=0xaab818, group=13, shape=GEM_2, scale=2, name="Lighter Polyp",
-    durability=1, points=1, sort=-10000},
-  
--- Block 13048
-{13048, features=PALETTE, growRate=16.25, fillColor=0x677606, fillColor1=0x424512, lineColor=0x879606, group=13, shape=GEM_3, scale=2, name="Polyp",
-    durability=3, points=2, sort=-10000},
-{113048, features=PALETTE, growRate=16.25, fillColor=0x889828, fillColor1=0x636724, lineColor=0xaab818, group=13, shape=GEM_3, scale=2, name="Lighter Polyp",
-    durability=1, points=1, sort=-10000},
-  
--- Block 13049
-{13049, features=PALETTE, growRate=16.25, fillColor=0x677606, fillColor1=0x424512, lineColor=0x879606, group=13, shape=GEM_4, scale=2, name="Polyp",
-    durability=3, points=2, sort=-10000},
-{113049, features=PALETTE, growRate=16.25, fillColor=0x889828, fillColor1=0x636724, lineColor=0xaab818, group=13, shape=GEM_4, scale=2, name="Lighter Polyp",
-    durability=1, points=1, sort=-10000},
-  
--- Block 13050
-{13050, features=PALETTE, growRate=16.25, fillColor=0x677606, fillColor1=0x424512, lineColor=0x879606, group=13, shape=HEPTAGON, scale=2, name="Polyp",
-    durability=3, points=2, sort=-10000},
-{113050, features=PALETTE, growRate=16.25, fillColor=0x889828, fillColor1=0x636724, lineColor=0xaab818, group=13, shape=HEPTAGON, scale=2, name="Lighter Polyp",
-    durability=1, points=1, sort=-10000},
-  
--- Block 13051
-{13051, features=PALETTE, growRate=16.25, fillColor=0x677606, fillColor1=0x424512, lineColor=0x879606, group=13, shape=OCTAGON, scale=2, name="Polyp",
-    durability=3, points=2, sort=-10000},
-{113051, features=PALETTE, growRate=16.25, fillColor=0x889828, fillColor1=0x636724, lineColor=0xaab818, group=13, shape=OCTAGON, scale=2, name="Lighter Polyp",
-    durability=1, points=1, sort=-10000},
-  
--- Block 13052
-{13052, features=PALETTE, growRate=16.25, fillColor=0x677606, fillColor1=0x424512, lineColor=0x879606, group=13, shape=RECT, name="Polyp",
-    durability=3, points=2, sort=-10000},
-{113052, features=PALETTE, growRate=16.25, fillColor=0x889828, fillColor1=0x636724, lineColor=0xaab818, group=13, shape=RECT, name="Lighter Polyp",
-    durability=1, points=1, sort=-10000},
-  
--- Block 13053 (scale=2)
-{13053, features=PALETTE, growRate=16.25, fillColor=0x677606, fillColor1=0x424512, lineColor=0x879606, group=13, shape=ISOTRI_25, scale=2, name="Polyp",
-    durability=3, points=2, sort=-10000},
-{113053, features=PALETTE, growRate=16.25, fillColor=0x889828, fillColor1=0x636724, lineColor=0xaab818, group=13, shape=ISOTRI_25, scale=2, name="Lighter Polyp",
-    durability=1, points=1, sort=-10000},
   
 -- Block 13054 (has special features – not changed)
 {13054, features=PALETTE|THRUSTER, capacity=0.1, fillColor=0x677646, fillColor1=0x507646,
@@ -122,53 +128,6 @@
     shape=THRUSTER, scale=2, name="Polyp", points=5, durability=0.5, density=0.15,
     thrusterForce=70000, sort=10005},
   
--- Block 13082
-{13082, features=PALETTE, growRate=16.25, fillColor=0x677606, fillColor1=0x424512, lineColor=0x879606, group=13, shape=GEM_1, scale=3, name="Polyp",
-    durability=3, points=4, sort=-10000},
-{113082, features=PALETTE, growRate=16.25, fillColor=0x889828, fillColor1=0x636724, lineColor=0xaab818, group=13, shape=GEM_1, scale=3, name="Lighter Polyp",
-    durability=1, points=2, sort=-10000},
-  
--- Block 13083
-{13083, features=PALETTE, growRate=16.25, fillColor=0x677606, fillColor1=0x424512, lineColor=0x879606, group=13, shape=GEM_2, scale=3, name="Polyp",
-    durability=3, points=4, sort=-10000},
-{113083, features=PALETTE, growRate=16.25, fillColor=0x889828, fillColor1=0x636724, lineColor=0xaab818, group=13, shape=GEM_2, scale=3, name="Lighter Polyp",
-    durability=1, points=2, sort=-10000},
-  
--- Block 13084
-{13084, features=PALETTE, growRate=16.25, fillColor=0x677606, fillColor1=0x424512, lineColor=0x879606, group=13, shape=GEM_3, scale=3, name="Polyp",
-    durability=3, points=4, sort=-10000},
-{113084, features=PALETTE, growRate=16.25, fillColor=0x889828, fillColor1=0x636724, lineColor=0xaab818, group=13, shape=GEM_3, scale=3, name="Lighter Polyp",
-    durability=1, points=2, sort=-10000},
-  
--- Block 13085
-{13085, features=PALETTE, growRate=16.25, fillColor=0x677606, fillColor1=0x424512, lineColor=0x879606, group=13, shape=GEM_4, scale=3, name="Polyp",
-    durability=3, points=4, sort=-10000},
-{113085, features=PALETTE, growRate=16.25, fillColor=0x889828, fillColor1=0x636724, lineColor=0xaab818, group=13, shape=GEM_4, scale=3, name="Lighter Polyp",
-    durability=1, points=2, sort=-10000},
-  
--- Block 13086
-{13086, features=PALETTE, growRate=16.25, fillColor=0x677606, fillColor1=0x424512, lineColor=0x879606, group=13, shape=HEPTAGON, scale=3, name="Polyp",
-    durability=3, points=4, sort=-10000},
-{113086, features=PALETTE, growRate=16.25, fillColor=0x889828, fillColor1=0x636724, lineColor=0xaab818, group=13, shape=HEPTAGON, scale=3, name="Lighter Polyp",
-    durability=1, points=2, sort=-10000},
-  
--- Block 13087
-{13087, features=PALETTE, growRate=16.25, fillColor=0x677606, fillColor1=0x424512, lineColor=0x879606, group=13, shape=OCTAGON, scale=3, name="Polyp",
-    durability=3, points=4, sort=-10000},
-{113087, features=PALETTE, growRate=16.25, fillColor=0x889828, fillColor1=0x636724, lineColor=0xaab818, group=13, shape=OCTAGON, scale=3, name="Lighter Polyp",
-    durability=1, points=2, sort=-10000},
-  
--- Block 13088
-{13088, features=PALETTE, growRate=16.25, fillColor=0x677606, fillColor1=0x424512, lineColor=0x879606, group=13, shape=RECT, scale=3, name="Polyp",
-    durability=3, points=4, sort=-10000},
-{113088, features=PALETTE, growRate=16.25, fillColor=0x889828, fillColor1=0x636724, lineColor=0xaab818, group=13, shape=RECT, scale=3, name="Lighter Polyp",
-    durability=1, points=2, sort=-10000},
-  
--- Block 13089
-{13089, features=PALETTE, growRate=16.25, fillColor=0x677606, fillColor1=0x424512, lineColor=0x879606, group=13, shape=ISOTRI_25, scale=3, name="Polyp",
-    durability=3, points=4, sort=-10000},
-{113089, features=PALETTE, growRate=16.25, fillColor=0x889828, fillColor1=0x636724, lineColor=0xaab818, group=13, shape=ISOTRI_25, scale=3, name="Lighter Polyp",
-    durability=1, points=2, sort=-10000},
   
 -- Block 13090 (has special features – not changed)
 {13090, features=PALETTE|THRUSTER, capacity=0.1, fillColor=0x677646, fillColor1=0x507646,
@@ -176,41 +135,6 @@
     shape=THRUSTER, scale=3, name="Polyp", points=7, durability=0.5, density=0.15,
     thrusterForce=120000, sort=10006},
   
--- Block 13094
-{13094, features=PALETTE, growRate=16.25, fillColor=0x677606, fillColor1=0x424512, lineColor=0x879606, group=13, scale=2, name="Polyp",
-    durability=3, points=2, sort=-10000},
-{113094, features=PALETTE, growRate=16.25, fillColor=0x889828, fillColor1=0x636724, lineColor=0xaab818, group=13, scale=2, name="Lighter Polyp",
-    durability=1, points=1, sort=-10000},
-  
--- Block 13095
-{13095, features=PALETTE, growRate=16.25, fillColor=0x677606, fillColor1=0x424512, lineColor=0x879606, group=13, name="Polyp",
-    durability=3, points=2, sort=-10000},
-{113095, features=PALETTE, growRate=16.25, fillColor=0x889828, fillColor1=0x636724, lineColor=0xaab818, group=13, name="Lighter Polyp",
-    durability=1, points=1, sort=-10000},
-  
--- Block 13096 (scale=4)
-{13096, features=PALETTE, growRate=16.25, fillColor=0x677606, fillColor1=0x424512, lineColor=0x879606, group=13, shape=RECT_QUARTER, scale=4, name="Polyp",
-    durability=3, points=1, sort=-10000},
-{113096, features=PALETTE, growRate=16.25, fillColor=0x889828, fillColor1=0x636724, lineColor=0xaab818, group=13, shape=RECT_QUARTER, scale=4, name="Lighter Polyp",
-    durability=1, points=0, sort=-10000},
-  
--- Block 13097 (scale=6)
-{13097, features=PALETTE, growRate=16.25, fillColor=0x677606, fillColor1=0x424512, lineColor=0x879606, group=13, shape=RECT_QUARTER, scale=6, name="Polyp",
-    durability=3, points=1, sort=-10000},
-{113097, features=PALETTE, growRate=16.25, fillColor=0x889828, fillColor1=0x636724, lineColor=0xaab818, group=13, shape=RECT_QUARTER, scale=6, name="Lighter Polyp",
-    durability=1, points=0, sort=-10000},
-  
--- Block 13098
-{13098, features=PALETTE, growRate=16.25, fillColor=0x677606, fillColor1=0x424512, lineColor=0x879606, group=13, shape=HEPTAGON, scale=3, name="Polyp",
-    durability=3, points=4, sort=-10000},
-{113098, features=PALETTE, growRate=16.25, fillColor=0x889828, fillColor1=0x636724, lineColor=0xaab818, group=13, shape=HEPTAGON, scale=3, name="Lighter Polyp",
-    durability=1, points=2, sort=-10000},
-  
--- Block 13099
-{13099, features=PALETTE, growRate=16.25, fillColor=0x677606, fillColor1=0x424512, lineColor=0x879606, group=13, shape=ADAPTER, name="Polyp",
-    durability=3, points=1, sort=-10000},
-{113099, features=PALETTE, growRate=16.25, fillColor=0x889828, fillColor1=0x636724, lineColor=0xaab818, group=13, shape=ADAPTER, name="Lighter Polyp",
-    durability=1, points=0, sort=-10000},
   
 -- Other blocks unchanged
 {13101, features=PALETTE|LASER|MELEE, meleeDamage=2.5, fillColor=0x778036, fillColor1=0x92a202, lineColor=0xe7f606,
@@ -359,18 +283,6 @@
     density=0.15,
     replicateTime=1.75, 
     sort=110041},
-{3013137, features=PALETTE, growRate=16.25, fillColor=0x677606, fillColor1=0x424512, lineColor=0x879606,
-    group=13, shape=RECT_QUARTER, scale=8, name="Polyp",
-    durability=3, points=1, sort=-10000},
-{3113137, features=PALETTE, growRate=16.25, fillColor=0x889828, fillColor1=0x636724, lineColor=0xaab818,
-    group=13, shape=RECT_QUARTER, scale=8, name="Lighter Polyp",
-    durability=1, points=0, sort=-10000},
-{3013138, features=PALETTE, growRate=16.25, fillColor=0x677606, fillColor1=0x424512, lineColor=0x879606,
-    group=13, shape=HEPTAGON, scale=4, name="Polyp",
-    durability=3, points=1, sort=-10000},
-{3113138, features=PALETTE, growRate=16.25, fillColor=0x889828, fillColor1=0x636724, lineColor=0xaab818,
-    group=13, shape=HEPTAGON, scale=4, name="Lighter Polyp",
-    durability=1, points=0, sort=-10000},
 {3013139, group=13, features=PALETTE|GENERATOR, fillColor=0x778036, fillColor1=0x92a202, lineColor=0xe7f606,
     shape=HEPTAGON, scale=2, name="Photosynthesizer", points=10, durability=0.5, density=0.15,
     replicateTime=0.85, sort=110041, generatorCapacityPerSec=50, powerCapacity=200, capacity=200},
