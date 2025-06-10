@@ -1,0 +1,60 @@
+{
+    20359 = {
+        name="Farmer",
+        playable=1,
+        start="20359_T2-Skirmisher",
+        primaries=3,
+        color0=0x79a82d,
+        color1=0x404040,
+        color2=0x061a65,
+    },
+
+    7 = {
+        name="Flies",
+        playable=2,
+        primaries=2,
+        start="7_ship9"
+    },
+
+    2 = {
+        name="OldFarmer",
+        playable=0,
+        start="",
+        primaries=0,
+    },
+
+    --NEW FACTIONS
+        80359  = { name=_("Terran"), playable=1, start="80359_Bomberman",
+               color0=0x113077, color1=0xaaaaaa, aiflags=FORGIVING|WANDER|DODGES|SOCIAL|TRACTOR_TRANSIENT },
+        30359  = { name=_("Red"), playable=1, start="30359_Miner",
+               color0=0xe1a71c, color1= 0xa01d10, aiflags=FORGIVING|WANDER|DODGES|RECKLESS|METAMORPHOSIS|BAD_AIM,
+               thrustSFX=1},
+        40359  = { name=_("Tinkrell"), playable=1,
+               color0=0x800000, color1= 0x30203b, aiflags=FORGIVING|WANDER|DODGES|AGGRESSIVE|FLOCKING|TRACTOR_TRANSIENT },
+        60359  = { name=_("Borg"), color0=0xffffff, color1=0xeeeeee, aiflags=FORGIVING|WANDER|DODGES },
+        110359 = { name=_("Crystalline"), playable=1,
+               color0=0x058060, color1=0x074480, aiflags=FORGIVING|WANDER|DODGES|AGGRESSIVE, thrustSFX=1,
+               explosionColor0=0xa50060, explosionColor1=0x074480},
+        120359 = { name=_("Bee"), playable=1,
+               color0=0xF8BC04, color1=0x514644, aiflags=WANDER|DODGES|AGGRESSIVE|HATES_PLANTS },
+        130359 = { name=_("Spiky Plant"), color0=0x98a606, color1=0x677606, aiflags=FORGIVING|HATES_PLANTS|WANDER|NO_PARENT },
+        150359 = { name=_("Sentinel"), playable=1, start="",
+               color0=0x96bc2a, color1=0x404840, aiflags=WANDER|DODGES },
+    --OLD FACTIONS
+        8  = { name=_("Terran"), playable=0, start="",
+               color0=0x113077, color1=0xaaaaaa, aiflags=FORGIVING|WANDER|DODGES|SOCIAL|TRACTOR_TRANSIENT },
+        3  = { name=_("Red"), playable=0, start="",
+               color0=0xe1a71c, color1= 0xa01d10, aiflags=FORGIVING|WANDER|DODGES|RECKLESS|METAMORPHOSIS|BAD_AIM,
+               thrustSFX=1},
+        4  = { name=_("Tinkrell"), playable=0,
+               color0=0x800000, color1= 0x30203b, aiflags=FORGIVING|WANDER|DODGES|AGGRESSIVE|FLOCKING|TRACTOR_TRANSIENT },
+        6  = { name=_("Borg"), color0=0xffffff, color1=0xeeeeee, aiflags=FORGIVING|WANDER|DODGES },
+        11 = { name=_("Crystalline"), playable=0,
+               color0=0x058060, color1=0x074480, aiflags=FORGIVING|WANDER|DODGES|AGGRESSIVE, thrustSFX=1,
+               explosionColor0=0xa50060, explosionColor1=0x074480},
+        12 = { name=_("Bee"), playable=0,
+               color0=0xF8BC04, color1=0x514644, aiflags=WANDER|DODGES|AGGRESSIVE|HATES_PLANTS },
+        13 = { name=_("Spiky Plant"), playable=2, color0=0x98a606, color1=0x677606, aiflags=FORGIVING|HATES_PLANTS|WANDER|NO_PARENT },
+        15 = { name=_("Sentinel"), playable=0, start="",
+               color0=0x96bc2a, color1=0x404840, aiflags=WANDER|DODGES },
+}
