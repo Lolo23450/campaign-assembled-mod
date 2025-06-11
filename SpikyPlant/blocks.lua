@@ -32,7 +32,7 @@
 	{13013, extends=13010,  scale=1,	shape=GEM_4,}
 	{13014, extends=13010,  scale=1,	shape=HEPTAGON,}
 	{13015, extends=13010,  scale=1,	shape=OCTAGON,}
-	{13016, extends=13010,  scale=1,	shape=RECT,}
+	{13052, extends=13010,  scale=1,	shape=RECT,}
 	{13017, extends=13010,  scale=1,	shape=ISOTRI_25,}
 			-- Scale 2
 	{13046, extends=13010,  scale=2,	shape=GEM_1,}
@@ -41,7 +41,7 @@
 	{13049, extends=13010,  scale=2,	shape=GEM_4,}
 	{13050, extends=13010,  scale=2,	shape=HEPTAGON,}
 	{13051, extends=13010,  scale=2,	shape=OCTAGON,}
-	{13052, extends=13010,  scale=2,	shape=RECT,}
+	{13016, extends=13010,  scale=2,	shape=RECT,}
 	{13053, extends=13010,  scale=2,	shape=ISOTRI_25,}
 			-- Scale 3
 	{13082, extends=13010,  scale=3,	shape=GEM_1,}
@@ -82,7 +82,7 @@
 	{113013, extends=113010,  scale=1,	shape=GEM_4,}
 	{113014, extends=113010,  scale=1,	shape=HEPTAGON,}
 	{113015, extends=113010,  scale=1,	shape=OCTAGON,}
-	{113016, extends=113010,  scale=1,	shape=RECT,}
+	{113052, extends=113010,  scale=1,	shape=RECT,}
 	{113017, extends=113010,  scale=1,	shape=ISOTRI_25,}
 			-- Scale 2
 	{113046, extends=113010,  scale=2,	shape=GEM_1,}
@@ -91,7 +91,7 @@
 	{113049, extends=113010,  scale=2,	shape=GEM_4,}
 	{113050, extends=113010,  scale=2,	shape=HEPTAGON,}
 	{113051, extends=113010,  scale=2,	shape=OCTAGON,}
-	{113052, extends=113010,  scale=2,	shape=RECT,}
+	{113016, extends=113010,  scale=2,	shape=RECT,}
 	{113053, extends=113010,  scale=2,	shape=ISOTRI_25,}
 			-- Scale 3
 	{113082, extends=113010,  scale=3,	shape=GEM_1,}
