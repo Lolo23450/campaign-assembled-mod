@@ -19,7 +19,7 @@
 		features=PALETTE,
 		group=13,
 		name="Polyp",
-		blurb="",
+		blurb="A thick, fiberous material that quickly regrows after damage",
 		shape=GEM_1, scale=1,
 		fillColor=0x677606, fillColor1=0x424512, lineColor=0x879606,
 		points=1, durability=3, density=0.1, growRate=12,
@@ -69,7 +69,7 @@
 		features=PALETTE,
 		group=13,
 		name="Light Polyp",
-		blurb="",
+		blurb="A less developed material lacking the strength of permanent formations but coming much cheaper and lighter, as well as growing even faster",
 		shape=GEM_1, scale=1,
 		fillColor=0x889828, fillColor1=0x636724, lineColor=0xaab818,
 		points=-1, durability=1, density=0.08, growRate=16,
@@ -283,12 +283,96 @@
     density=0.15,
     replicateTime=1.75, 
     sort=110041},
-{3013139, group=13, features=PALETTE|GENERATOR, fillColor=0x778036, fillColor1=0x92a202, lineColor=0xe7f606,
+	{3013139, group=13, features=PALETTE|GENERATOR, fillColor=0x778036, fillColor1=0x92a202, lineColor=0xe7f606,
     shape=HEPTAGON, scale=2, name="Photosynthesizer", points=10, durability=0.5, density=0.15,
-    replicateTime=0.85, sort=110041, generatorCapacityPerSec=50, powerCapacity=200, capacity=200},
-{3013140, group=13, features=PALETTE|GENERATOR, fillColor=0x778036, fillColor1=0x92a202, lineColor=0xe7f606,
+    replicateTime=0.85, sort=110041, generatorCapacityPerSec=50, powerCapacity=200, capacity=200,
+    shroud={
+        {size={10, 10}, offset={5,0,0.04}, shape=OCTAGON, angle=75, tri_color_id=2, tri_color1_id=2, line_color_id=2},
+        {size={11, 0.5}, offset={-0.5,0,0.05}, shape=SQUARE, angle=0, tri_color_id=0, tri_color1_id=1, line_color_id=2},
+        {size={1, 5.5}, offset={4.5,0,0.05}, shape=SQUARE, angle=0, tri_color_id=0, tri_color1_id=1, line_color_id=2},
+        {size={5, 5}, offset={5,0,0.06}, shape=OCTAGON, angle=0, tri_color_id=0, tri_color1_id=1, line_color_id=2},
+        {size={17, 17}, offset={5,0,0.03}, shape=HEPTAGON, angle=0, tri_color_id=0, tri_color1_id=1, line_color_id=2},
+        {size={19, 19}, offset={5,0,0.02}, shape=HEPTAGON, angle=0, tri_color_id=2, tri_color1_id=2, line_color_id=2},
+		}
+	}
+	{3013140, group=13, features=PALETTE|GENERATOR, fillColor=0x778036, fillColor1=0x92a202, lineColor=0xe7f606,
     shape=HEPTAGON, scale=3, name="Photosynthesizer", points=25, durability=0.5, density=0.15,
-    replicateTime=0.85, sort=110041, generatorCapacityPerSec=100, powerCapacity=500, capacity=400},
-{3013141, group=13, features=PALETTE|GENERATOR, fillColor=0x778036, fillColor1=0x92a202, lineColor=0xe7f606,
+    replicateTime=0.85, sort=110041, generatorCapacityPerSec=100, powerCapacity=500, capacity=400,
+    shroud={
+        {size={24, 24}, offset={10,0,0.04}, shape=OCTAGON, angle=75, tri_color_id=2, tri_color1_id=2, line_color_id=2},
+        {size={27, 1}, offset={-3.5,0,0.05}, shape=SQUARE, angle=0, tri_color_id=0, tri_color1_id=1, line_color_id=2},
+        {size={2, 13.5}, offset={9,0,0.05}, shape=SQUARE, angle=0, tri_color_id=0, tri_color1_id=1, line_color_id=2},
+        {size={12, 12}, offset={10,0,0.06}, shape=OCTAGON, angle=0, tri_color_id=0, tri_color1_id=1, line_color_id=2},
+        {size={8, 8}, offset={10,0,0.06}, shape=OCTAGON, angle=0, tri_color_id=2, tri_color1_id=2, line_color_id=2},
+        {size={36, 36}, offset={10,0,0.03}, shape=HEPTAGON, angle=0, tri_color_id=0, tri_color1_id=1, line_color_id=2},
+        {size={39, 39}, offset={10,0,0.02}, shape=HEPTAGON, angle=0, tri_color_id=2, tri_color1_id=2, line_color_id=2},
+		}
+	}
+	{3013141, group=13, features=PALETTE|GENERATOR, fillColor=0xe7f606, fillColor1=0xe7f606, lineColor=0x92a202,
     shape=OCTAGON, scale=3, name="Photosynthesizer", points=50, durability=0.5, density=0.15,
-    replicateTime=0.85, sort=110041, generatorCapacityPerSec=200, powerCapacity=1200, capacity=600},
+    replicateTime=0.85, sort=110041, generatorCapacityPerSec=200, powerCapacity=1200, capacity=600
+    shroud={
+        {size={26.5, 26.5}, offset={12,0,0.04}, shape=OCTAGON, angle=0, tri_color_id=2, tri_color1_id=2, line_color_id=2},
+        {size={28, 1.5}, offset={-2,0,0.05}, shape=SQUARE, angle=0, tri_color_id=0, tri_color1_id=1, line_color_id=2},
+        {size={28, 0.75}, offset={-2,0,0.05}, shape=SQUARE, angle=0, tri_color_id=2, tri_color1_id=2, line_color_id=2},
+        {size={3, 14}, offset={10.5,0,0.05}, shape=SQUARE, angle=0, tri_color_id=0, tri_color1_id=1, line_color_id=2},
+        {size={1.5, 14}, offset={11.25,0,0.06}, shape=SQUARE, angle=0, tri_color_id=2, tri_color1_id=2, line_color_id=2},
+        {size={13.5, 13.5}, offset={12,0,0.07}, shape=OCTAGON, angle=0, tri_color_id=0, tri_color1_id=1, line_color_id=2},
+        {size={12, 12}, offset={12,0,0.08}, shape=OCTAGON, angle=0, tri_color_id=2, tri_color1_id=2, line_color_id=2},
+        {size={10, 10}, offset={12,0,0.08}, shape=OCTAGON, angle=0, tri_color_id=0, tri_color1_id=1, line_color_id=2},
+        {size={39, 39}, offset={12,0,0.03}, shape=OCTAGON, angle=0, tri_color_id=0, tri_color1_id=1, line_color_id=2},
+        {size={42, 42}, offset={12,0,0.02}, shape=OCTAGON, angle=0, tri_color_id=2, tri_color1_id=2, line_color_id=2},
+        {size={37, 37}, offset={12,0,0.03}, shape=OCTAGON, angle=0, tri_color_id=2, tri_color1_id=2, line_color_id=2},
+        {size={28, 28}, offset={12,0,0.03}, shape=OCTAGON, angle=0, tri_color_id=0, tri_color1_id=1, line_color_id=2},
+		}
+	},
+	
+	{ -- Storage
+		3013144,
+		features=PALETTE,
+		group=13,
+		name="Flower",
+		blurb="",
+		shape=GEM_4, scale=1,
+		fillColor=0xa15582, fillColor1=0xc4c03f, lineColor=0x8c456e,
+		points=3, durability=3, density=0.25, growRate=7,
+		capacity=200, sort=-1000,
+		shroud={
+            {size={16, 12},	offset={4,0,0.04},		shape=GEM_4, 	angle=0,		tri_color_id=2, tri_color1_id=2, line_color_id=0}
+            {size={10, 15},	offset={0,0,0.12},		shape=GEM_4, 	angle=0,		tri_color_id=2, tri_color1_id=2, line_color_id=0}
+            {size={10, 10},	offset={3.8,-5,0.06},	shape=GEM_4, 	angle=5,		tri_color_id=2, tri_color1_id=2, line_color_id=0}
+            {size={10, 10},	offset={3.8,5,0.06},	shape=GEM_4, 	angle=-5,		tri_color_id=2, tri_color1_id=2, line_color_id=0}
+            {size={8, 10},	offset={2.8,-6,0.1},	shape=GEM_4, 	angle=20,		tri_color_id=2, tri_color1_id=2, line_color_id=0}
+            {size={8, 10},	offset={2.8,6,0.1},		shape=GEM_4,	angle=-20,		tri_color_id=2, tri_color1_id=2, line_color_id=0}
+            {size={7, 10},	offset={-2,-5,0.08},	shape=GEM_4,	angle=-3,		tri_color_id=2, tri_color1_id=2, line_color_id=0}
+            {size={7, 10},	offset={-2,5,0.08},		shape=GEM_4, 	angle=3,		tri_color_id=2, tri_color1_id=2, line_color_id=0}
+            {size={14, 2},	offset={6.8,-2,-0.02},	shape=GEM_1, 	angle=pi*0.9,	tri_color_id=2, tri_color1_id=2, line_color_id=0}
+            {size={14, 2},	offset={6.8,2,-0.02},	shape=GEM_1, 	angle=pi*1.1,	tri_color_id=2, tri_color1_id=2, line_color_id=0}
+            {size={2, 2},	offset={14,-2.2,0.02},	shape=HEPTAGON, angle=pi*0.9,	tri_color_id=1, tri_color1_id=1, line_color_id=1}
+            {size={2, 2},	offset={14,2.2,0.02},	shape=HEPTAGON, angle=pi*1.1,	tri_color_id=1, tri_color1_id=1, line_color_id=1}
+        }
+	},
+	{ -- Storage
+		3013145,
+		features=PALETTE,
+		group=13,
+		name="Flower",
+		blurb="",
+		shape=GEM_4, scale=2,
+		fillColor=0x677606, fillColor1=0xc4c03f, lineColor=0x879606,
+		points=7, durability=3, density=0.25, growRate=7,
+		capacity=500, sort=-1000,
+	},
+	{ -- Storage
+		3013146,
+		features=PALETTE,
+		group=13,
+		name="Flower",
+		blurb="",
+		shape=GEM_4, scale=3,
+		fillColor=0x677606, fillColor1=0xc4c03f, lineColor=0x879606,
+		points=11, durability=3, density=0.25, growRate=7,
+		capacity=1100, sort=-1000,
+	},
+	
+}
