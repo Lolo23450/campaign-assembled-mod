@@ -54,7 +54,7 @@
                explosionColor0=0xa50060, explosionColor1=0x074480},
         12 = { name=_("Bee"), playable=0,
                color0=0xF8BC04, color1=0x514644, aiflags=WANDER|DODGES|AGGRESSIVE|HATES_PLANTS },
-        13 = { name=_("Spiky Plant"), playable=2, color0=0x98a606, color1=0x677606, aiflags=FORGIVING|HATES_PLANTS|WANDER|NO_PARENT },
+        13 = { name=_("Spiky Plant"), playable=2, start="13_thorn" color0=0x98a606, color1=0x677606, aiflags=FORGIVING|HATES_PLANTS|WANDER|NO_PARENT },
         15 = { name=_("Sentinel"), playable=0, start="",
                color0=0x96bc2a, color1=0x404840, aiflags=WANDER|DODGES },
 }
