@@ -3,11 +3,6 @@
 {
     totalSize = 300000,          -- radius of whole map
     color = 0x404040,
- 
-    fleets = { { 30359, { { 0, 5000 }, {1, 300} } },
-       { 20359, { { 0.5, 0}, { 0.51, 3000 }, {1, 500}}},
-       { 40359, { { 0.5, 0}, {0.7, 2000}, {0.9, 0} } } },
- 
     ambient = { 2, 1, 0 },
     ident = 2,
  
@@ -15,17 +10,19 @@
  
        -- this region generates the default player faction areas
        -- the map is generated and saved in sectors, each sector is a 6000 unit wide square
+
+       --terran
        {
-          ident = 200,              -- unique identifier for this region (goes in generated map save files)
-          count = 8,               -- generate 8 of these subregions
+          ident = 200, 
+          count = 8,
           radius = { 0.1, 0.15 },  -- each is 10-15% of the radius of the whole map
           position = { 0.1, 1.0 }, -- place between 10-100% of the way to edge of map
           fleets = { { 80359, { { 0, 3500}, {1, 1000} } } }, -- fill with faction 8 ships, each sector has 3500P at center, 1000P at edge
-          fleetCount = { { 4, 8 } }                      -- each sector has 4-8 ships
-          ambient = { 0 },                               -- plant type (0, 1, 2) are (green, blue, pink)
-          -- type = 0 (default). type 0 is voronoi regions, type 1 are splats, type 2 are circles
+          fleetCount = { { 4, 8 } }                          -- each sector has 4-8 ships
+          ambient = { 0 },                                   -- plant type (0, 1, 2) are (green, blue, pink)
+          type = 0 (default). --type 0 is voronoi regions, type 1 are splats, type 2 are circles
        }
- 
+       --crystalline
        {
           ident = 201,
           count = 1,
@@ -36,7 +33,7 @@
           asteroidSize = { 10, 100 },
           asteroidDensity = { 0.0, 0.2 },
        },
- 
+       --red
        {  
           ident = 202,
           count = 5,
@@ -45,9 +42,9 @@
           type = 1,
           position = {0.2, 0.8},
           fleets = { { 30359, { {0, 10000}, {1, 3000} } } },
-          
           ambient = { 0 },
        },
+       --tinkrel
        {  
           ident = 203,
           count = 6,
@@ -60,6 +57,7 @@
           fortressCount = { 3, 4 },
           fortressRadius = { 600, 700 },
        },
+       --fly
        {  
           ident = 204,
           count = 18,
@@ -69,6 +67,7 @@
           type = 1,
           ambient = { 1 },
        },
+       --sentinel
        { 
           ident = 205,
           count = 6,
@@ -84,6 +83,7 @@
           fortressCount = { 1, 6 },
           fortressRadius = { 500, 700 },
        },
+       --bee
        {
           ident = 206,
           count = 4,
@@ -94,6 +94,7 @@
           fleetFraction = 0.6,
           ambient = { -1 },
        },
+       --borg
        {
           ident = 207,
           radius = {0.1, 0.15},
@@ -104,32 +105,25 @@
           fleetFraction = 0.8,
           ambient = { -1 },
        },
+       --outer farmer
        {
           ident = 208,
           count = 4,
           radius = { 0.075, 0.085 },
           position = { 0.3, 0.9 },
-          fleets = { { 20359, { { 0, 1500}, {1, 600} } } },
+          fleets = { { 20359, { { 0, 1750}, {1, 600} } } },
           ambient = { 0 },
           fortressCount = { 1, 3 },
        },
+       --inner farmers
        {
           ident = 209,
           count = 3,
           radius = { 0.12, 0.14 },
           position = { 0.2, 0.4 },
-          fleets = { { 20359, { { 0, 8000}, {1, 4000} } } },
+          fleets = { { 20359, { { 0, 12000}, {1, 6000} } } },
           ambient = { 0 },
           fortressCount = { 4, 5 },
-       },
-       {
-          ident = 210,
-          count = 6,
-          radius = { 0.1, 0.15 },
-          position = { 0.3, 0.7 },
-          fleets = { { 130359, { { 0, 4000}, {1, 2000} } } },
-          fleetCount = { { 15, 20  } },
-          ambient = { -1 },
        },
        {
           ident = 211,

@@ -2,7 +2,7 @@
     20359 = {
         name="Farmer",
         playable=1,
-        start="20359_T2-Skirmisher",
+        start="20359_skirm",
         primaries=3,
         color0=0x79a82d,
         color1=0x404040,
