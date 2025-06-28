@@ -5,4 +5,5 @@
 	#include "Terran/blocks.lua"
 	#include "Tinkrell/blocks.lua"
 	#include "SpikyPlant/blocks.lua"
+	#include "Bee/blocks.lua"
 }
