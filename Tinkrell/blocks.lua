@@ -38,6 +38,21 @@
 },
 
 {
+  458, 
+  features=PALETTE|GENERATOR, 
+  capacity=200, 
+  fillColor=0x384098, fillColor1=0xa03000, lineColor=0x40206b, scale=2,
+  group=40359, 
+  name="Generator", 
+  points=120, 
+  durability=0.5, 
+  density=0.15,
+  powerCapacity=1000, 
+  generatorCapacityPerSec=400, 
+  sort=20030
+},
+
+{
   416, 
   features=PALETTE|PHOTOSYNTH, 
   capacity=100, 
@@ -258,6 +273,30 @@
   scale=1, 
   name="RBank", 
   sort=-10000
+  shroud={
+      {size={44, 0.5},offset={-17, 10, 0.02}},
+      {size={44, 0.5},offset={-17, -10, 0.02}},
+      {size={36, 0.5},offset={-13, 12, 0.02}},
+      {size={36, 0.5},offset={-13, -12, 0.02}},
+
+      {size={2, 14}, offset={23, 0, 0.03}},
+      {size={2, 14}, offset={-15, 0, 0.03}},
+      {size={2, 11.5}, offset={24, 0, 0.02}},
+      {size={2, 11.5}, offset={-16, 0, 0.02}},
+
+      {size={5, 10}, offset={5, 0, 0.01}},
+      {size={5, 10}, offset={10, 0, 0.01}},
+      {size={5, 10}, offset={-5, 0, 0.01}},
+      {size={5, 10}, offset={-10, 0, 0.01}},
+      {size={5, 10}, offset={15, 0, 0.01}},
+
+      {size={8, 8}, offset={-5, 10, -0.02}, shape=COMMAND, angle=pi/2},
+      {size={8, 8}, offset={5, 10, -0.02}, shape=COMMAND, angle=pi/2},
+      {size={8, 8}, offset={-5, -10, -0.02}, shape=COMMAND, angle=pi/-2},
+      {size={8, 8}, offset={5, -10, -0.02}, shape=COMMAND, angle=pi/-2},
+      {size={8, 8}, offset={15, 10, -0.02}, shape=COMMAND, angle=pi/2},
+      {size={8, 8}, offset={15, -10, -0.02}, shape=COMMAND, angle=pi/-2},
+  },
 },
 
 -- ==========================================
@@ -655,7 +694,7 @@
   shield={
     strength=2500, 
     regen=400, 
-    radius=120, 
+    radius=100, 
     color=0x19171b29,
     lineColor=0xc171b29, 
     damagedColor=0x4c3c476b
